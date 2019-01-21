@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		var day=new Date();
+		var chri=new Date(day.getFullYear(),11,25);
+		if(day.getFullYear()==12 && day.getDate()>25)
+		{
+			chri.setFullYear(chri.getFullYear()+1);
+		}
+		var oned=1000*60*60*24;
+		alert(Math.ceil((chri.getTime()-day.getTime())/(oned))+"Days left for Christmas");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

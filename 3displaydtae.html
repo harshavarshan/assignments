@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var tday=new Date();
+		var day=tday.getDate();
+		var month=tday.getMonth()+1;
+		var  year=tday.getFullYear();
+		if(day<10)
+		{
+			day = '0'+day;
+		}
+		if (month<10) 
+		{
+			month = '0'+month;
+
+		}
+		tday = month+'-'+day+'-'+year;
+		alert(tday);
+		tday = month+'/'+day+'/'+year;
+		alert(tday);
+		tday = month+'-'+day+'-'+year;
+		alert(tday);
+		tday = month+'/'+day+'/'+year;
+		alert(tday);
+	</script>
+	Current Date
+
+</body>
+</html>

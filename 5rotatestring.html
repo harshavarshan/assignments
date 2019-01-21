@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Animation</title>
+	<script>
+		function rotate(id) 
+       {
+        var ele = document.getElementById(id);
+        var text = ele.childNodes[0]; 
+        var tex = text.data;
+
+       setInterval(function () 
+         {
+           tex = tex[tex.length - 1] + tex.substring(0, tex.length - 1);
+           text.data = tex;
+         }, 100);
+         }
+
+	</script>
+</head>
+<body onload="rotate('target')" <pre id="target">Harsha </pre>
+
+</body>
+</html>

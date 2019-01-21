@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function check(a,b)
+		 {
+			if(a == 8 || b == 8)
+			{
+				return true;
+			}
+			if(a+b == 8 || Math.abs(a-b)==8)
+			{
+				return true;
+			}
+			return false;
+		}
+		alert(check(7,8));
+		alert(check(16,8));
+	</script>
+
+</body>
+</html>

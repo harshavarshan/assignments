@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function check(str)
+		 {
+			if(str.length<6)
+			{
+				return str;
+
+			}
+			let restr=str;
+			if(str.substring(10,4)== 'script')
+			{
+				restr = str.substring(0,4)+str.substring(10,str.length);
+			}
+			return restr;
+			}
+		alert(check("javascript"));
+		alert(check("Harsha"));
+	</script>
+
+</body>
+</html>

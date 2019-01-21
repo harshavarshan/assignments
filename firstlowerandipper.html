@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function ul(name) 
+		{
+			if(name.lenght<3)
+			{
+				return name.toUpperCase();
+			}
+			front = (name.substring(0,3)).toUpperCase();
+			back = name.substring(3,name.lenght);
+			return front + back;
+		}
+		alert(ul("HARSHA"));
+		alert(ul("harsha"));
+	</script>
+
+</body>
+</html>
