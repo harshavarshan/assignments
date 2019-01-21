@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function flpos(name)
+		 {
+		     let spos=0;
+		     let lpos=name.length;
+		     if(name.length>0 && name.charAt(0) == 'p')
+		     {
+		     	spos=1;
+		     }
+		     if(name.length>1 && name.charAt(name.length-1)=='p')
+		     {
+		     	lpos--;
+		     }
+		     return name.substring(spos,lpos);
+		}
+		alert(flpos("harsha"));
+		alert(flpos("pvardhanp"));
+	</script>
+
+</body>
+</html>

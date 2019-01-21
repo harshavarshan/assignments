@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	function test(a,b,c) 
+  {    
+    if (c < 40 || c > 10000)
+      return false;
+    else
+      if (c >= a && c <= b)
+        return true;
+      else
+        return false;
+  }
+alert(test(40, 400, 45));  
+alert(test(80, 320, 79));  
+alert(test(89, 4000, 30));
+</script>
+</body>
+</html>

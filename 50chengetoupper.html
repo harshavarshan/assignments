@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function char(name)
+		 {
+			name= name.split("");
+			for(var i=0;i<name.length;i++)
+			{
+				name[i]=name[i][0].toUpperCase()+name[i].substr(1);
+			}
+			return name.join("");
+		}
+		alert(char("hi hello good mornig"));
+	</script>
+
+</body>
+</html>

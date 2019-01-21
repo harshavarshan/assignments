@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function arr(arr1,arr2)
+		 {
+			for( var i=0;i<arr1.length;i++)
+			{
+				for( var j=1;j<arr2.length;j++)
+				{
+					var re = true;
+					temp = arr1[i];
+					arr1[i]=arr1[j];
+					arr1[j]=temp;
+					for(var k=0;k<arr1.length;k++)
+					{
+						if(arr1[k]!=arr2[k])
+						{
+							re = false;
+							break;
+						}
+					}
+					if(re)
+					{
+						return true;
+					}
+					arr1[j] = arr1[i];
+					arr1[i]  = temp;				}
+			}
+			return false;
+		}
+		alert(arr([10,15,20],[10,15,20]));
+	</script>
+
+</body>
+</html>
